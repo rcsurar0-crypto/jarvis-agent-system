@@ -13,4 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
+rootProject.name = "jarvis-agent-system"
 include ':app'
