@@ -1,24 +1,17 @@
-plugins {
-    id 'com.android.application'
-}
-
-android {
-    namespace "com.jarvis.agent"
-    compileSdk 34
-
-    defaultConfig {
-        applicationId "com.jarvis.agent"
-        minSdk 26
-        targetSdk 34
-        versionCode 1
-        versionName "1.0"
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-        }
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
     }
 }
 
-dependencies {}
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "jarvis-agent-system"
+include ':app'
